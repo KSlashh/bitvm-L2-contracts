@@ -7,7 +7,6 @@ import {Test} from "forge-std/Test.sol";
 import {StdStorage, stdStorage} from "forge-std/StdStorage.sol";
 import {SequencerSetPublisher} from "../src/SequencerSetPublisher.sol";
 import {ISequencerSetPublisher} from "../src/interfaces/ISequencerSetPublisher.sol";
-import {MultiSigVerifier} from "../src/MultiSigVerifier.sol";
 import {console} from "forge-std/console.sol";
 
 contract SequencerSetPublisherTest is Test {
@@ -66,7 +65,6 @@ contract SequencerSetPublisherTest is Test {
         initPublishers[2] = vm.addr(batch[2]);
 
         sspublisher = new SequencerSetPublisher();
-        // MultiSigVerifier verifier = new MultiSigVerifier();
 
         sspublisher.initialize(owner);
     }
