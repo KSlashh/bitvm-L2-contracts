@@ -13,7 +13,7 @@ library BitvmTxParser {
 
     uint32 constant CHALLENGE_CONNECTOR_VOUT = 0;
     uint32 constant DISPROVE_CONNECTOR_VOUT = 1;
-    uint32 constant GUARDIAN_CONNECTOR_VOUT = 4;
+    uint32 constant GUARDIAN_CONNECTOR_VOUT = 3;
 
     uint256 private constant BYTES_DATA_OFFSET = 32;
     uint256 private constant OUTPOINT_SIZE = 36;
